@@ -39,8 +39,8 @@ formulario.addEventListener('submit', (evento) => {
     const precio = document.querySelector('[data-precio]').value
     
     productoServices.actualizarProducto(imgUrl, recomendado, nombre, precio, id).then(() => {
-      productoServices.refrescarPagina(); 
+    //   productoServices.refrescarPagina(); 
      
-    //   window.location.href ='https://alurageek-re4c.onrender.com/productos.html';
+      window.location.href ='https://alurageek-re4c.onrender.com/productos.html';
     });
 });
