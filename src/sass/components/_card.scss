@@ -1,0 +1,157 @@
+// Cards
+.card {
+  @include flex($j-content:space-around, $a-items:null, $wrap:null, $gap:null);
+  flex-direction: column;
+
+  @include card();
+}
+
+// ----------------------------------------------------------------------------------
+
+// Botones laterales
+.lSPager {
+  display: none;
+}
+
+.lSAction > a {
+  background-color: $gray-clr;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0.5;
+}
+
+.lSAction > a::after {
+  position: absolute;
+  content: '';
+  margin: auto;
+  border: solid $white-clr;
+  border-width: 0px 4px 4px 0px;
+  display: inline-block;
+  padding: 5px;
+  // top: 28%;
+  // right: 28%;
+
+  opacity: 0.8;
+}
+
+.lSAction > .lSPrev::after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.lSAction > .lSNext::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+// ----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Primer card de productos
+/*
+.card__productos {
+    width: 24%;
+    height: 45vh;
+    border: 1px salmon solid;
+    border-radius: 12px;
+    background-color: $white-clr;
+    padding: 15px;
+    overflow: hidden;
+    
+    & strong {
+      margin-bottom: 20px;
+      color: black;
+    }
+    
+    
+    
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    
+    // align-items: center;
+    & img {
+        display: flex;
+        object-fit: contain;
+        border: 1px salmon solid;
+        
+    }
+}
+
+.card__info {
+  display: flex;
+}
+
+.info--btn {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  @include btn__azul();
+}
+*/
+
+// .lSPager {
+//   display: none;
+// }
+
+// .lSAction > a {
+//   width: 50px;
+//   height: 50px;
+  
+//   border-radius: 50%;
+  
+//   // background-color: $gray-clr;
+//   background-color: #00000077;
+//   background-image: none;
+  
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+// }
+// .lSAction > a::after {
+//   position: absolute;
+//   content: '';
+//   margin: auto;
+//   border: solid $white-clr;
+//   border-width: 0px 4px 4px 0px;
+//   display: inline-block;
+//   padding: 5px;
+
+// }
+
+// .lSAction > .lSPrev::after {
+//   -webkit-transform: rotate(135deg);
+//   transform: rotate(135deg);
+// }
+
+// .lSAction > .lSNext::after {
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+// }
